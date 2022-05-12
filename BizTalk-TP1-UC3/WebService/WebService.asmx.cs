@@ -22,5 +22,12 @@ namespace WebApplication1
         {
             return "Hello " + who;
         }
+
+        [WebMethod]
+        public string GetUid()
+        {
+            Guid guid = Guid.NewGuid();
+            return guid.ToString();
+        }
     }
 }
