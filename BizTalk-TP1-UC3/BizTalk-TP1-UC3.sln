@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalk-TP1-UC3", "BizTalk-TP1-UC3\BizTalk-TP1-UC3.btproj", "{1E693B35-5576-4FA8-8DBA-E8D356FBDA58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{1012974E-1E47-43E4-A059-F88C176BD2F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceCustom", "WcfServiceCustom\WcfServiceCustom.csproj", "{0401FFF2-0580-4264-8B0B-7599F9CFC952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebServiceApplication", "TestWebServiceApplication\TestWebServiceApplication.csproj", "{515A6DEF-EBDD-49AF-ABFF-1A907AC51333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,14 @@ Global
 		{1E693B35-5576-4FA8-8DBA-E8D356FBDA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E693B35-5576-4FA8-8DBA-E8D356FBDA58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E693B35-5576-4FA8-8DBA-E8D356FBDA58}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{1012974E-1E47-43E4-A059-F88C176BD2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1012974E-1E47-43E4-A059-F88C176BD2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1012974E-1E47-43E4-A059-F88C176BD2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1012974E-1E47-43E4-A059-F88C176BD2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0401FFF2-0580-4264-8B0B-7599F9CFC952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0401FFF2-0580-4264-8B0B-7599F9CFC952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0401FFF2-0580-4264-8B0B-7599F9CFC952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0401FFF2-0580-4264-8B0B-7599F9CFC952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515A6DEF-EBDD-49AF-ABFF-1A907AC51333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515A6DEF-EBDD-49AF-ABFF-1A907AC51333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515A6DEF-EBDD-49AF-ABFF-1A907AC51333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515A6DEF-EBDD-49AF-ABFF-1A907AC51333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
