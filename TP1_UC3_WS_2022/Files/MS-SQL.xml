@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<ns0:Root xmlns:ns0="http://TP1_UC3_WS_2022.Schema.MS_SQL">
+
+<cardID>50</cardID>
+
+<uid>15</uid>
+
+<username>dasf</username>
+
+<amount>12312</amount>
+
+</ns0:Root>
