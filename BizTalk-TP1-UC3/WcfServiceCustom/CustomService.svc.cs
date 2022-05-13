@@ -27,5 +27,15 @@ namespace WcfServiceCustom
         {
             return "Hello " + name;
         }
+
+        void AddMoneyForQuotaWithUsername(float quota, string username)
+        {
+
+        }
+
+        void AddQuota(int nbrOfPrint, string username)
+        {
+
+        }
     }
 }
