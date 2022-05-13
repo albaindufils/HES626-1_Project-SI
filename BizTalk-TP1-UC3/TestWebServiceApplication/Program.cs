@@ -14,6 +14,7 @@ namespace TestWebServiceApplication
 
             // Use the 'client' variable to call operations on the service.
             Console.WriteLine(client.GetUid());
+            Console.WriteLine(client.GetShortGuid());
 
             System.Threading.Thread.Sleep(10000); // pour pouvoir voir la fenêtre
         }

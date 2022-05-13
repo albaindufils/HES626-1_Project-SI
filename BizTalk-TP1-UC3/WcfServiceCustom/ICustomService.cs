@@ -7,7 +7,6 @@ using System.Text;
 
 namespace WcfServiceCustom
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "ICalculator" in both code and config file together.
     [ServiceContract]
     public interface ICustomService
     {
@@ -16,5 +15,8 @@ namespace WcfServiceCustom
 
         [OperationContract]
         string GetUid();
+
+        [OperationContract]
+        string GetShortGuid();
     }
 }
