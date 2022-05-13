@@ -1,0 +1,361 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="8a2ac236-e91b-4a00-bfa4-b14318cfd6d4">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalk_TP1_UC3" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="bf6cb592-a365-4640-995a-b62d2c794c3f" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;ICustomService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="58a5ed9f-b132-4190-ab1e-3529d08d600a" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SayHello&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SayHello" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7934ac86-0c81-4ba2-b2cb-19eea72e30b5" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_SayHello_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:ICustomService_SayHello_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/SayHello&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b02b48a1-09ba-42ea-b1b1-eabc7482d2a0" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_SayHello_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:ICustomService_SayHello_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/SayHelloResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="4c8da322-e7c2-4385-b2f8-fc839b037fa4" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetUid&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetUid" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5024eb5f-7d9f-489e-adc1-82f91b183391" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_GetUid_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:ICustomService_GetUid_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/GetUid&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="76594419-ab77-4afb-9575-b1c9f448f1d9" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_GetUid_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:ICustomService_GetUid_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/GetUidResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="bb895dc6-e0d1-41ea-ae72-3025e7cb2f44" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;GetShortGuid&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="GetShortGuid" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="167c2062-9919-48fb-8180-77fb930d84a4" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_GetShortGuid_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:ICustomService_GetShortGuid_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/GetShortGuid&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="7418c20a-9d74-49df-bc31-f169c8b70ed5" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_GetShortGuid_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:ICustomService_GetShortGuid_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/GetShortGuidResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="28bcbb98-cf27-494e-9ad0-2838dbf8f621" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddMoneyForQuotaWithUsername&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddMoneyForQuotaWithUsername" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="53ec6282-a452-4dee-b328-e56e06ac4387" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_AddMoneyForQuotaWithUsername_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:ICustomService_AddMoneyForQuotaWithUsername_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/AddMoneyForQuotaWithUsername&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5b28847d-48f3-41c5-a2a4-95fb19122a7a" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_AddMoneyForQuotaWithUsername_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:ICustomService_AddMoneyForQuotaWithUsername_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/AddMoneyForQuotaWithUsernameResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="09893814-7cc3-4c17-9ffd-e157d70c67bb" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddQuota&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddQuota" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="27c25402-b8f1-466e-b5b2-296b18ae38dc" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_AddQuota_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:ICustomService_AddQuota_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/AddQuota&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="35807834-ca72-4951-986c-500da4946ab4" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_TP1_UC3.ICustomService_AddQuota_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:ICustomService_AddQuota_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/ICustomService/AddQuotaResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="666c6236-b6a1-453d-ba41-d76e53276800" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_SayHello_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_SayHello_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="1d53d17a-73ae-45c3-b0d3-ba6f630f2c8c" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..SayHello" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="d86c3849-16ef-4e2f-a412-9ba62b509cec" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_SayHello_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_SayHello_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="5e169ac4-fef1-4d17-bd1f-12854a0ec91b" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..SayHelloResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1f46dbf5-090a-49ec-8ecf-4026afe3693a" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_GetUid_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_GetUid_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f951f693-38b6-4efa-9fbe-cd0396231d81" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..GetUid" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="18f02418-86c5-4ffb-b01e-9fb80d9a5713" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_GetUid_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_GetUid_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="712d2082-3cbe-45fe-ac95-44068c79f70d" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..GetUidResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ffad0f58-8c15-4b73-a7e0-450332a16a13" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_GetShortGuid_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_GetShortGuid_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="44ba03f5-2569-4f6e-9501-e1fa5a436963" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..GetShortGuid" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1f6f5709-48a1-4559-a6ad-eb60a382ec12" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_GetShortGuid_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_GetShortGuid_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="dd5d16ab-35fa-4748-9a0f-5b60704005df" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..GetShortGuidResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="be746a67-2b73-4b50-ade7-2e970f77f566" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_AddMoneyForQuotaWithUsername_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_AddMoneyForQuotaWithUsername_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="6f8d6ce3-c5cb-4660-a6c3-846214c1567e" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..AddMoneyForQuotaWithUsername" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f27aec60-5782-4147-9f15-a86895fe401e" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_AddMoneyForQuotaWithUsername_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_AddMoneyForQuotaWithUsername_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="527452ea-561a-4421-ae41-ff93446da2bc" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..AddMoneyForQuotaWithUsernameResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="da5e64f1-0acb-4d68-a4a6-076d0f45bfb2" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_AddQuota_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_AddQuota_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="d8e80bad-61b4-4510-b0c4-60feaf0925cf" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..AddQuota" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1c8551a7-ac4c-405e-b6a8-95d8abc13781" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ICustomService_AddQuota_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ICustomService_AddQuota_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f78b18b9-269b-45b9-a9f8-bae4ba981efc" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_TP1_UC3..AddQuotaResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="d6daf1ed-db19-4921-bd06-6daca712c517" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;CustomService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="CustomServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="1fca5076-c677-4515-ba33-9eae551d0a46" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalk_TP1_UC3
+{
+    internal messagetype ICustomService_SayHello_InputMessage
+    {
+        body .SayHello parameters;
+    };
+    internal messagetype ICustomService_SayHello_OutputMessage
+    {
+        body .SayHelloResponse parameters;
+    };
+    internal messagetype ICustomService_GetUid_InputMessage
+    {
+        body .GetUid parameters;
+    };
+    internal messagetype ICustomService_GetUid_OutputMessage
+    {
+        body .GetUidResponse parameters;
+    };
+    internal messagetype ICustomService_GetShortGuid_InputMessage
+    {
+        body .GetShortGuid parameters;
+    };
+    internal messagetype ICustomService_GetShortGuid_OutputMessage
+    {
+        body .GetShortGuidResponse parameters;
+    };
+    internal messagetype ICustomService_AddMoneyForQuotaWithUsername_InputMessage
+    {
+        body .AddMoneyForQuotaWithUsername parameters;
+    };
+    internal messagetype ICustomService_AddMoneyForQuotaWithUsername_OutputMessage
+    {
+        body .AddMoneyForQuotaWithUsernameResponse parameters;
+    };
+    internal messagetype ICustomService_AddQuota_InputMessage
+    {
+        body .AddQuota parameters;
+    };
+    internal messagetype ICustomService_AddQuota_OutputMessage
+    {
+        body .AddQuotaResponse parameters;
+    };
+    internal porttype ICustomService
+    {
+        requestresponse SayHello
+        {
+            ICustomService_SayHello_InputMessage, ICustomService_SayHello_OutputMessage
+        };
+        requestresponse GetUid
+        {
+            ICustomService_GetUid_InputMessage, ICustomService_GetUid_OutputMessage
+        };
+        requestresponse GetShortGuid
+        {
+            ICustomService_GetShortGuid_InputMessage, ICustomService_GetShortGuid_OutputMessage
+        };
+        requestresponse AddMoneyForQuotaWithUsername
+        {
+            ICustomService_AddMoneyForQuotaWithUsername_InputMessage, ICustomService_AddMoneyForQuotaWithUsername_OutputMessage
+        };
+        requestresponse AddQuota
+        {
+            ICustomService_AddQuota_InputMessage, ICustomService_AddQuota_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CustomServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

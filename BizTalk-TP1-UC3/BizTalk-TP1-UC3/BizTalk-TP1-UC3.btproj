@@ -73,6 +73,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomService.BindingInfo.xml" />
+    <XLang Include="CustomService.odx">
+      <TypeName>CustomService</TypeName>
+      <Namespace>BizTalk_TP1_UC3</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="CustomService_Custom.BindingInfo.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>
