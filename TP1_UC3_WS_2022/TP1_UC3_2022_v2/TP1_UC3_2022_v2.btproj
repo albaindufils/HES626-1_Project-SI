@@ -87,6 +87,11 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="PropertySchema.xsd">
+      <TypeName>PropertySchema</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.PropertySchema</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="TP1_UC3_2022_V2.snk" />
     <Schema Include="Schemas\payonline_payment.xsd">
       <TypeName>payonline_payment</TypeName>
