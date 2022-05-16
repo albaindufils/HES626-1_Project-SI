@@ -7,11 +7,11 @@ using Microsoft.BizTalk.XLANGs.BTXEngine;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BizTalk-TP1-UC3")]
+[assembly: AssemblyTitle("TP1_UC3_2022_v2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BizTalk-TP1-UC3")]
+[assembly: AssemblyProduct("TP1_UC3_2022_v2")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -23,7 +23,7 @@ using Microsoft.BizTalk.XLANGs.BTXEngine;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1e693b35-5576-4fa8-8dba-e8d356fbda58")]
+[assembly: Guid("1f0bd997-8248-4004-b261-e92981989c48")]
 
 // Version information for an assembly consists of the following four values:
 //
