@@ -87,6 +87,7 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Schema Include="CustomService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>TP1_UC3_WS_2022_V2</Namespace>
       <TypeName>CustomService_schemas_microsoft_com_2003_10_Serialization</TypeName>
@@ -95,10 +96,11 @@
     <Schema Include="CustomService_tempuri_org.xsd">
       <Namespace>TP1_UC3_WS_2022_V2</Namespace>
       <TypeName>CustomService_tempuri_org</TypeName>
-    </Schema>
+=======
     <Schema Include="PropertySchema.xsd">
       <TypeName>PropertySchema</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.PropertySchema</Namespace>
+>>>>>>> 5462bf57e7bb622d3bfbbfa2f32268628d0c2c97
       <SubType>Task</SubType>
     </Schema>
     <None Include="TP1_UC3_2022_V2.snk" />
