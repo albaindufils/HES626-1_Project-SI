@@ -87,6 +87,16 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="CustomService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>TP1_UC3_WS_2022_V2</Namespace>
+      <TypeName>CustomService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="CustomService_tempuri_org.xsd">
+      <Namespace>TP1_UC3_WS_2022_V2</Namespace>
+      <TypeName>CustomService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="TP1_UC3_2022_V2.snk" />
     <Schema Include="Schemas\payonline_payment.xsd">
       <TypeName>payonline_payment</TypeName>
@@ -109,13 +119,46 @@
       <SubType>Task</SubType>
     </Schema>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Map Include="Maps\Faculties_to_Print-System.btm">
-      <TypeName>MS_SQL_to_Print_System</TypeName>
+    <Map Include="Maps\Webservice_to_Payment-Database.btm">
+      <TypeName>Webservice_to_PaymentDatabase</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
       <SubType>Task</SubType>
     </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomService.BindingInfo.xml" />
+    <Map Include="Maps\Payment-Database_to_Print-System.btm">
+      <SubType>Task</SubType>
+      <TypeName>PaymentDatabase_to_PrintSystem</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\Faculties_to_Print-System.btm">
+      <TypeName>Faculties_to_PrintSystem</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Maps\Webservice_to_PayOnline.btm">
+      <SubType>Task</SubType>
+      <TypeName>Webservice_to_PayOnline</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\MSSQL_to_SAP.btm">
+      <TypeName>MSSQL_to_SAP</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Maps\Webservice_to_Faculties.btm">
+      <TypeName>Webservice_to_Faculties</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="CustomService.odx">
+      <TypeName>CustomService</TypeName>
+      <Namespace>TP1_UC3_WS_2022_V2</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="CustomService_Custom.BindingInfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

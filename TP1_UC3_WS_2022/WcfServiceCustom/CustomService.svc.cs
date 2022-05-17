@@ -10,32 +10,10 @@ namespace WcfServiceCustom
 {
     public class CustomService : ICustomService
     {
-        public string GetUid()
+        public int GetRandomValue()
         {
-            Guid guid = Guid.NewGuid();
-            return guid.ToString();
-
-        }
-        public string GetShortGuid()
-        {
-            ShortGuid shortGuid = new ShortGuid(Guid.NewGuid());
-            return shortGuid.ToString();
-
-        }
-
-        public string SayHello(string name)
-        {
-            return "Hello " + name;
-        }
-
-        void AddMoneyForQuotaWithUsername(float quota, string username)
-        {
-
-        }
-
-        void AddQuota(int nbrOfPrint, string username)
-        {
-
+            var rand = new Random();
+            return rand.Next(101);
         }
     }
 }

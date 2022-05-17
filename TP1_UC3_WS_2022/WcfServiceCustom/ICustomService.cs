@@ -11,18 +11,6 @@ namespace WcfServiceCustom
     public interface ICustomService
     {
         [OperationContract]
-        string SayHello(string name);
-
-        [OperationContract]
-        string GetUid();
-
-        [OperationContract]
-        string GetShortGuid();
-
-        [OperationContract]
-        void AddMoneyForQuotaWithUsername(float quota, string username);
-
-        [OperationContract]
-        void AddQuota(int nbrOfPrint, string username);
+        int GetRandomValue();
     }
 }
