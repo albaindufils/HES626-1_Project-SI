@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<ns0:Root xmlns:ns0="http://BizTalk_TP1_UC3.Schema.MS_SQL">
-<authentication> 
-	<cardId>50A8C</cardId>
-	<uid>18</uid>
-</authentication> 
-</ns0:Root>

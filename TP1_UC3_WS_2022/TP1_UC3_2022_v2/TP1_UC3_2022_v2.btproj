@@ -36,7 +36,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>TP1_UC3_2022_V2.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>TP1_UC3_2022.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -73,8 +73,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Schemas\faculties_payment.xsd">
-      <TypeName>faculties_payment</TypeName>
+    <Schema Include="Schemas\payment.xsd">
+      <TypeName>payment</TypeName>
       <Namespace>TP1_UC3_2022_v2</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -87,6 +87,7 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <None Include="TP1_UC3_2022.snk" />
     <Schema Include="CustomService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>TP1_UC3_WS_2022_V2</Namespace>
       <TypeName>CustomService_schemas_microsoft_com_2003_10_Serialization</TypeName>
@@ -95,21 +96,11 @@
     <Schema Include="CustomService_tempuri_org.xsd">
       <Namespace>TP1_UC3_WS_2022_V2</Namespace>
       <TypeName>CustomService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
     </Schema>
     <Schema Include="PropertySchema.xsd">
       <TypeName>PropertySchema</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.PropertySchema</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <None Include="TP1_UC3_2022_V2.snk" />
-    <Schema Include="Schemas\payonline_payment.xsd">
-      <TypeName>payonline_payment</TypeName>
-      <Namespace>TP1_UC3_WS_2022_V2.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="Schemas\paymentdb_payment.xsd">
-      <TypeName>paymentdb_payment</TypeName>
-      <Namespace>TP1_UC3_WS_2022_V2.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="Schemas\username.xsd">
@@ -124,36 +115,21 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
-    <Map Include="Maps\Webservice_to_Payment-Database.btm">
-      <TypeName>Webservice_to_PaymentDatabase</TypeName>
+    <Map Include="Maps\Webservice_to_Payment.btm">
+      <TypeName>Webservice_to_Payment</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
       <SubType>Task</SubType>
     </Map>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CustomService.BindingInfo.xml" />
-    <Map Include="Maps\Payment-Database_to_Print-System.btm">
-      <SubType>Task</SubType>
-      <TypeName>PaymentDatabase_to_PrintSystem</TypeName>
-      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
-    </Map>
-    <Map Include="Maps\Faculties_to_Print-System.btm">
-      <TypeName>Faculties_to_PrintSystem</TypeName>
+    <Map Include="Maps\Payment_to_Print-System.btm">
+      <TypeName>Payment_to_PrintSystem</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
       <SubType>Task</SubType>
-    </Map>
-    <Map Include="Maps\Webservice_to_PayOnline.btm">
-      <SubType>Task</SubType>
-      <TypeName>Webservice_to_PayOnline</TypeName>
-      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
     </Map>
     <Map Include="Maps\MSSQL_to_SAP.btm">
       <TypeName>MSSQL_to_SAP</TypeName>
-      <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
-      <SubType>Task</SubType>
-    </Map>
-    <Map Include="Maps\Webservice_to_Faculties.btm">
-      <TypeName>Webservice_to_Faculties</TypeName>
       <Namespace>TP1_UC3_WS_2022_V2.Maps</Namespace>
       <SubType>Task</SubType>
     </Map>
